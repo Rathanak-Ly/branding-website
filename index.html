@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A small branding landing page used to test the hosting deployment process." />
+  <title>Nova — Branding Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="logo">NOVA<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Branding Studio</p>
+      <h1>We build brands<br />people remember.</h1>
+      <p class="subtitle">
+        Strategy, identity, and design that make small businesses look
+        unmistakably big.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a project</a>
+        <a href="#services" class="btn btn-ghost">See our work</a>
+      </div>
+      <p class="host-status" id="hostStatus">Checking deployment…</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p class="lead">
+        Nova is a compact studio focused on one thing: giving brands a clear
+        voice and a sharp look. This page is a lightweight static site — perfect
+        for verifying that your hosting, domain, and deployment pipeline all work.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Strategy</h3>
+          <p>Positioning, messaging, and the story that sets you apart.</p>
+        </article>
+        <article class="card">
+          <h3>Identity</h3>
+          <p>Logos, color, and type systems built for every screen.</p>
+        </article>
+        <article class="card">
+          <h3>Web</h3>
+          <p>Fast, responsive sites that turn visitors into customers.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <p class="lead">Tell us about your project and we'll reply within a day.</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note" id="formNote" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nova Branding Studio. Test deployment.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
